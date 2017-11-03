@@ -1,0 +1,3 @@
+rootProject.name = 'splitbillup16'
+
+include ':app'
