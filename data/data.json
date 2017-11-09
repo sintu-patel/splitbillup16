@@ -1,0 +1,16 @@
+{
+  "pages": [
+    {
+      "pageName": "Introduction",
+      "content": "Google has made available Android Architecture Components 1.0, a collection of libraries to design “robust, testable, and maintainable apps.” The current components are Lifecycle, LiveData, ViewModel and Room with others on the way."
+    },
+    {
+      "pageName": "Discussion",
+      "content": "Google has created Architecture Components to help with “persist data, manage the lifecycle of components, write modular applications, defense against common errors, write less boilerplate code.” The main components are:Lifecycle is an architectural component used to create activities and fragments aware of their lifecycle, capable of adjusting their behavior based on their state. Components can go through multiple states – initialized, created, started, resumed, destroyed – and the lifecycle methods are called to perform various operations when a state event is triggered. Lifecycle will hold information about the status of a component, dealing with changes in status, and relieving the component of this tasks. The purpose is to write simpler code, easier to understand"
+    },
+    {
+      "pageName": "Conclusion",
+      "content": "In the near future, a new component will be made available, PagedList, which currently is in alpha. PageList is useful to gradually load data without waiting for large database queries to finish. They are also working on other architectural components that will be announced in the coming months."
+    }
+  ]
+}
