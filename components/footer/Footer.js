@@ -17,7 +17,7 @@ export default class Footer extends Component<{}> {
     return (
       <View style={styles.footer}>
         <Text style={styles.heading}>
-          Footer
+          Developed by Sintu
         </Text>
       </View>
     );
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     height: 50,
   },
   heading: {
-    fontSize: 20,
+    fontSize: 14,
     margin: 10,
     color: 'white',
   }

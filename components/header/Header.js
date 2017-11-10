@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   header: {
     backgroundColor: '#666666',
     height: 80,
+    justifyContent: 'center',
   },
   heading: {
     fontSize: 30,

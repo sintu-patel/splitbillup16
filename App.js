@@ -23,7 +23,7 @@ export default class App extends Component<{}> {
   constructor(props) {
     super(props);
     this.state = {
-      activePage: 1
+      activePage: 0
     }
   }
 
@@ -40,7 +40,7 @@ export default class App extends Component<{}> {
           onPress={this.activatePage.bind(this, index)}
           title={item.pageName}
           color="#841584"
-          accessibilityLabel="Learn more about this purple button"
+          accessibilityLabel="Display the page"
           />
         ));
         return nav;
@@ -49,7 +49,7 @@ export default class App extends Component<{}> {
   render() {
     const pageData = data.pages[this.state.activePage];
     return (
-      <View style={styles.container}>
+      <View>
         <Header />
         <View style={styles.nav}>
           {this.renderNav()}
@@ -63,12 +63,13 @@ export default class App extends Component<{}> {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
   },
   nav: {
-    flex: 1,
     flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
   }
 });

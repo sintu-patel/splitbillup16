@@ -15,7 +15,7 @@ import {
 export default class Main extends Component<{}> {
   render() {
     return (
-      <View style={styles.content}>
+      <View>
         <Text style={styles.heading}>
           {this.props.data.pageName}
         </Text>
@@ -29,18 +29,21 @@ export default class Main extends Component<{}> {
 
 const styles = StyleSheet.create({
   content: {
-    alignItems: 'center',
-    backgroundColor: '#ffffff',
-    justifyContent: 'center',
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
   },
   heading: {
     fontSize: 20,
     margin: 10,
     color: 'navy',
+    fontWeight: 'bold',
   },
   text: {
     fontSize: 14,
     margin: 10,
     color: 'navy',
+    lineHeight: 30,
   }
 });
